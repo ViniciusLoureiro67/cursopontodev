@@ -1,12 +1,26 @@
-# Ignorar a build do Next.js
+# Build do Next.js
 .next/
+out/
 
-# Ignorar dependências
+# Dependências
 node_modules/
 
-# Ignorar logs e arquivos de sistema
+# Logs e arquivos de sistema
 *.log
 .DS_Store
+Thumbs.db
 
-# Ignorar configurações locais do VS Code
+# Configurações locais do VS Code
 .vscode/
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
+
+# Pasta da Vercel (caso deploy local/teste)
+.vercel/
+
+# Cobertura de testes (se usar Jest ou afins)
+coverage/
+*.lcov
